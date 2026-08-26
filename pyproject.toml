@@ -1,12 +1,12 @@
 [project]
 name = "python-foundations"
 version = "0.1.0"
-description = "Add your description here"
+description = "A modern Python learning laboratory focused on fundamentals, APIs, automation, and AI."
 readme = "README.md"
 authors = [
     { name = "Facundo Sevrini", email = "52105765+cacu88@users.noreply.github.com" }
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.14"
 dependencies = []
 
 [project.scripts]
