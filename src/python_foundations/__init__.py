@@ -6,6 +6,7 @@ def main() -> None:
     has_time: bool = True
     total: float = 0.0
     count: int = 0
+    highest: float = 0.0
     
     languages: list[str] = [
         "Python", 
@@ -33,8 +34,12 @@ def main() -> None:
             total = total + transaction
             count += 1
             print(f"Transaction: {transaction}")
+        if transaction > highest:
+            highest = transaction
+
     print(f"Total: {total}")
     print(f"Count: {count}")
+    print(f"Highest: {highest}")
 
     print(f"Nombre: {name}")
     print(f"Edad: {age}")
