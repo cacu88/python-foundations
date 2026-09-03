@@ -4,6 +4,8 @@ def main() -> None:
     height: float = 1.70
     is_learning: bool = True
     has_time: bool = True
+    total: float = 0.0
+    count: int = 0
     
     languages: list[str] = [
         "Python", 
@@ -18,6 +20,21 @@ def main() -> None:
         "role": "Junior Developer",
 	"languages": languages,
     }
+
+    transactions: list[float] = [
+        120.50,
+        75.00,
+        300.25,
+        50.00,
+    ]
+
+    for transaction in transactions:
+        if transaction > 100:
+            total = total + transaction
+            count += 1
+            print(f"Transaction: {transaction}")
+    print(f"Total: {total}")
+    print(f"Count: {count}")
 
     print(f"Nombre: {name}")
     print(f"Edad: {age}")
